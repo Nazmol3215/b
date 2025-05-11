@@ -13,7 +13,7 @@ export default function HotelForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.imageLink || !formData.imageName || !formData.phone || !formData.address) {
-      alert("⚠️ সকল ঘর পূরণ করুন!");
+      alert("⚠️লক্ষ্য করে সকল ঘর পূরণ করুন!");
       return;
     }
     await axios.post('http://localhost:5000/hotel/add', formData);
